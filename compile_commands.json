@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/user/code/P04",
+  "command": "/usr/bin/c++ -I/home/user/code/P04/core/include -g -std=gnu++23 -o CMakeFiles/P04_Library.dir/core/src/imposter.cpp.o -c /home/user/code/P04/core/src/imposter.cpp",
+  "file": "/home/user/code/P04/core/src/imposter.cpp",
+  "output": "/home/user/code/P04/CMakeFiles/P04_Library.dir/core/src/imposter.cpp.o"
+}
+]
