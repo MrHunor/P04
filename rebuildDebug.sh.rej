@@ -1,7 +1,0 @@
---- rebuildDebug.sh
-+++ rebuildDebug.sh
-@@ -4,2 +4,2 @@
--cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja
--cmake --build build --parallel
-+cmake -S . -B build/debug -DCMAKE_BUILD_TYPE=Debug -G Ninja
-+cmake --build build/debug --parallel

@@ -8,8 +8,12 @@ class ImposterGame {
    std::vector<std::string> players={};//name, imposter?
    uint8_t nImposters = -1;
    uint16_t guessTimeS=-1;
-   uint8_t imposterIndex=1;
+   uint8_t imposterIndex=-1;
+   std::string currentWord="";
+   std::string currentImposterTip="";
 
    void calcGuessTime();
+
+
 
 };

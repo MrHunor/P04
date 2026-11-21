@@ -1,7 +1,0 @@
---- rebuildRelease.sh
-+++ rebuildRelease.sh
-@@ -4,2 +4,2 @@
--cmake -DCMAKE_BUILD_TYPE=Release -G Ninja
--cmake --build build --parallel
-+cmake -S . -B build/release -DCMAKE_BUILD_TYPE=Release -G Ninja
-+cmake --build build/release --parallel
