@@ -1,3 +1,0 @@
-/home/user/code/P04/core/CMakeFiles/P04_Library.dir
-/home/user/code/P04/core/CMakeFiles/edit_cache.dir
-/home/user/code/P04/core/CMakeFiles/rebuild_cache.dir
