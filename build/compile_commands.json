@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/user/code/P04/build",
-  "command": "/usr/bin/g++ -I/home/user/code/P04/core/include -g -o CMakeFiles/P04_Library.dir/src/imposter.cpp.o -c /home/user/code/P04/core/src/imposter.cpp",
-  "file": "/home/user/code/P04/core/src/imposter.cpp",
-  "output": "/home/user/code/P04/build/CMakeFiles/P04_Library.dir/src/imposter.cpp.o"
-}
-]
