@@ -3,6 +3,7 @@
 #include <limits>
 #include <stdexcept>
 #include <string>
+#include <random>
 
 std::string readFile(std::string path)
 {
@@ -53,4 +54,18 @@ uint64_t getLineCount(std::string path)
         retval++;
     }
     return retval;
+}
+
+std::mt19937 getRandomGen()
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    return gen;
+}
+
+int RandomInt(int lower, int upper)
+{
+    std::uniform_int_distribution<int> dist(lower, upper);
+    auto gen = getRandomGen();
+    return dist(gen);
 }

@@ -48,3 +48,20 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU") #gnu expects this "libaray" of experime
 endif()
 
 target_compile_features(P04_Library PUBLIC cxx_std_20)
+
+
+#qt interface 
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+set(CMAKE_AUTOMOC ON)
+
+add_executable(P04_App
+    app/main.cpp
+    app/mainwindow.h
+    app/mainwindow.cpp
+)
+target_link_libraries(P04_App PRIVATE P04_Library Qt6::Widgets)
+
+add_custom_command(TARGET P04_App POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_CURRENT_SOURCE_DIR}/wordlist.txt
+        $<TARGET_FILE_DIR:P04_App>/wordlist.txt)
